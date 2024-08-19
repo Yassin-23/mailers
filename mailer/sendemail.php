@@ -33,7 +33,7 @@ function sendEmail($toEmail, $subject, $message)
 if(isset($_POST['send'])){
 $message=$_POST['message'];
 $reg = rand(10000,99999)."<br>";
-sendEmail("mbarushimanajoyce@gmail.com ", "your registration number",$message .$reg);
+sendEmail("mbarushimanajoyce@gmail.com ", "your registration number",$message.":".$reg);
 }
 ?>
 <!DOCTYPE html>
